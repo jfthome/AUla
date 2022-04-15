@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Olaria Alegria</title>
+  <style>
+    h2 {
+      color: #494949;
+    }
+
+    h3 {
+      color: #494949;
+    }
+
+    #about {
+      background-color: #b4bda1;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    #quote {
+      background-color: #f9742b;
+      color: #ffffff;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+
+    #quote h3 {
+      color: #ffffff;
+    }
+
+    footer {
+      background-color: #424242;
+      color: #ffffff;
+      padding-top: 40px;
+      padding-bottom: 40px;
+      text-align: center;
+    }
+
+    .product-image {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+      border-style: solid;
+    }
+    .product-name {
+      text-align: center;
+      font-weight:bolder;
+      font-style:italic;
+      font-size: 20px; 
+    }
+
+    .banner {
+      width: 100%;
+      height: 600px;
+      margin-top: 74px;
+      object-fit: cover;
+    }
+    .row {
+      margin: -20px;
+    }
+
+    .column {
+      width: 50%;
+      display: inline-block;
+      float: left;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .clearfix {
+      clear: both;
+    }
+
+    .container {
+      width: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .video {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      width: 560px; 
+      height: 315px;
+      max-width: 100%;
+    }
+    input, textarea, select {
+      width: 100%;
+    }
+    .form-item {
+      width: 100%;
+      min-height: 30px;
+      margin-bottom: 20px;
+      box-sizing: border-box;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content:space-between;
+      padding: 0 20px;
+      position: fixed;
+      top: 0%;
+      left: 0%;
+      right: 0%;
+      background-color: #ffffff;
+      border-bottom: 2px solid #000000;
+      height: 80px;
+    }
+    .brand-name {
+      color: #f9742b;
+      margin-right: 20px;
+    }
+    .brand-name a {
+      color: inherit;
+      text-decoration: solid;
+    }
+    .brand-phrase {
+      margin-left: 0;
+      margin-right: auto;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="brand-name">
+     <a href="#banner">Olaria Alegria</a>
+    </h1>
+    <h2 class="brand-phrase" >Tradição e qualidade na fabricação de tijolos</h2>
+    <nav>
+        <a href="#products"><button>Produtos</button></a>
+        <a href="#about"><button>Sobre</button></a>
+        <a href="#quote"><button>Orçamento</button></a>
+        <a href="#contact"><button>Contato</button></a>
+    </nav>
+  </header>
+  <section id="banner">
+    <img class="banner" src="images/banner.jpg" 
+  /></section>
+  <br/>
+  <br/>
+  <section id="products" style="width: 1000px; margin-left: auto; margin-right: auto;">
+    <h3>Produtos</h3>
+    <div class="row">
+      <div class="column">
+        <img class="product-image" src="images/blocos-ceramicos.jpg" />
+        <div class="product-name"> Blocos cerâmicos</div>
+      </div>
+      <div class="column">
+        <img class="product-image" src="images/lajes.jpg" />
+        <div class="product-name">Lajes</div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+    <div class="row">
+      <div class="column">
+        <img class="product-image" src="images/artefatos-de-concreto.png" />
+        <div class="product-name">Artefatos de Concreto</div>
+      </div>
+      <div class="column">
+        <img class="product-image" src="images/estruturas-pre-moldadas.jpg" />
+        <div class="product-name">Estruturas Pré-Moldadas</div>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </section>
+  <br/>
+  <br/>
+  <section id="about">
+    <div class="container">
+    <h3>Sobre nós</h3>
+    <h5>Conheça um pouco de nossa tradição e história</h5>
+    <p>Fundada em 1900 pelo avô do atual proprietário, a <strong>Olaria Alegria</strong> é o resultado de muita vivência, experiência e aprendizado no ramo de fabricação de blocos, lajes, artefatos e pré-moldados.</p>
+    <p>Nossos produtos seguem sempre um alto padrão de qualidade e oferecemos os melhores preços, as melhores formas de pagamento e atendimento personalizado.</p>
+    <p>Se você está construindo, é arquiteto ou engenheiro, ou ainda um representante ou revendedor de materiais de construção venha nos procurar e beneficie-se da experiência de tantos anos neste ramo.</p>
+    <iframe class="video" src="https://www.youtube.com/embed/ZRIW6PdEEh8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  </section>
+  <br/>
+  <br/>
+  <section id="quote">
+    <div class="container">
+    <h3>Solicite um orçamento</h3>
+    <p>Entre em contato conosco via e-mail ou telefone e faça sua cotação. Proporcionamos orientação técnica para aumentar o nível de segurança em sua obra.</p>
+    <form>
+      <label for="name">Nome:</label>
+    <input class="form-item" type="text" id="name" name="name" placeholder="Nome">
+    <br>
+    <label for="email">Endereço de E-mail:</label>
+    <input class="form-item" type="email" id="email" name="email" placeholder="E-mail">
+    <br>
+    <label for="phone">Telefone:</label>
+    <input class="form-item" type="tel" id="phone" name="phone" placeholder="Telefone">
+    <br>
+    <label for="product">Selecione uma opção:</label>
+    <select class="form-item" id="product" name="product">
+      <option value="selecione-uma-opcao" selected disabled> Selecione uma Opção</option>
+      <option value="blocos-ceramicos">Blocos Cerâmicos</option>
+      <option value="lajes">Lajes</option>
+      <option value="artefatos-de-concreto">Artefatos de Concreto</option>
+      <option value="estruturas-pre-moldadas">Estruturas Pré-Moldadas</option>
+    </select>
+      <label for="file">Selecione um arquivo:</label>
+    <input class="form-item" type="file" id="attachments" name="attachments">
+    <label for="textarea">Mensagem:</label>
+    <textarea class="form-item" id="textarea" name="textarea" rows="5"></textarea>
+    <input type="submit" value="Enviar">
+    
+    </form>
+  </div>
+  </section>
+  <br/>
+  <br/>
+  <section id="contact">
+    <div class="container">
+    
+    <h3>Contato</h3>
+    <h5>Ficou com alguma dúvida? Entre em contato conosco ou venha nos visitar!</h5>
+    <div><a href="tel:+550099999999">(00) 9999-9999</a></div>
+    <div><a href="mailto:contato@olariaalegria.com.br">contato@olariaalegria.com.br</a></div>
+    <br/>
+    <address>
+      Olaria Alegria<br/>
+      Estrada sem nome, 1234<br/>
+      Bairro - Cidade - UF - CEP: 12345-678<br/>
+    </address>
+  </div>
+  </section>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <footer>
+    <span>2022 © Olaria Alegria - Crie_TI</span>
+  </footer>
+</body>
+</html>
